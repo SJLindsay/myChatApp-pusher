@@ -11,7 +11,7 @@ export default function Home() {
     //pusher code here
     // Pusher.logToConsole = true;
 
-    const pusher = new Pusher("7b8528b65953c3de660d", {
+    const pusher = new Pusher("process.env.NEXT_PUBLIC_KEY", {
       cluster: "us3",
     });
 
